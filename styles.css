@@ -16,6 +16,10 @@ p{
     font-size: 14px;
 }
 
+a{
+    text-decoration: none;
+}
+
 @font-face {
     font-family: Inter;
     src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
@@ -76,7 +80,6 @@ body{
 
 .card .link-container{
     margin-top: 20px;
-    color: var(--white);
     text-align: center;
 }
 
@@ -87,12 +90,14 @@ body{
     background: var(--grey);
     font-size: 14px;
     font-weight: 700;
+    color: var(--white);
 }
 
-.card .link:hover{
+.card a:hover .link{
+    transition: all .3s;
     background: var(--primary);
-    color: var(--dard-grey);
     cursor: pointer;
+    color: var(--dard-grey);
 }
 
 
